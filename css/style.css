@@ -1,0 +1,207 @@
+/* 
+Colors 
+  Super Ligh Green: #cff09e
+  Light Green: #a8dba8 
+  Medium Green: #79bd9a
+  Dark Green: #3b8686  
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #777;
+}
+
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #3b8686;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: 4px solid #fff;
+  animation: loader 2s infinite ease;
+}
+
+.header {
+  height: 100vh;
+  background-image: linear-gradient(to right bottom, #3b8686, #a8dba875),
+    url("../images/lancerino.jpeg");
+  background-size: cover;
+  background-position: center;
+  /* -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); */
+  position: relative;
+}
+
+.logo-box {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+}
+
+.logo-name {
+  font-family: "Gochi Hand", cursive;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.heading {
+  color: white;
+}
+
+.heading-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-95%, -50%);
+  -webkit-backface-visibility: hidden;
+}
+
+.heading-primary {
+  display: block;
+  font-size: 40px;
+  letter-spacing: 7px;
+  font-weight: 700;
+  text-transform: uppercase;
+  animation: moveText;
+  animation-name: moveText;
+  animation-duration: 1s;
+  -webkit-backface-visibility: hidden;
+}
+
+.heading-sub {
+  display: block;
+  font-size: 15px;
+  letter-spacing: 7px;
+  font-weight: 700;
+  text-transform: uppercase;
+  animation: moveBot;
+  animation-name: moveBot;
+  animation-duration: 1s;
+  -webkit-backface-visibility: hidden;
+  margin-bottom: 10px;
+}
+
+.heading-about {
+  display: block;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  animation: moveAbout;
+  animation-name: moveAbout;
+  animation-duration: 2.5s;
+  backface-visibility: hidden;
+  text-shadow: 1px solid;
+}
+
+/* Skills Section */
+
+.skills-section {
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.skills-container {
+  padding-top: 10vh;
+  margin-left: 2rem;
+  margin-bottom: 2vh;
+}
+
+.projects-section {
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.projects-container {
+  padding-top: 5vh;
+  margin: 2rem;
+  background-size: cover;
+  background-position: center;
+}
+
+.information {
+  margin: 2rem;
+}
+
+.footer {
+  height: 30vh;
+  font-size: 1rem;
+  background-color: #3b8686;
+  color: white;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.links {
+  text-decoration: none;
+  color: white;
+}
+
+@keyframes moveText {
+  0% {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes moveBot {
+  0% {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes moveAbout {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+
+  75% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

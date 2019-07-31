@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- <link
+      href="https://fonts.googleapis.com/css?family=Gochi+Hand|Lato&display=swap"
+      rel="stylesheet"
+    /> -->
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Gochi+Hand|Lato:400,700|Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="jquery-2.1.4.js"></script>
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Lance Liam De Padua</title>
+  </head>
+  <body>
+    <!-- Loader -->
+
+    <!-- Loader  -->
+    <div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+    <script>
+      $(window).on("load", function() {
+        $(".loader-wrapper").fadeOut("slow");
+      });
+    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <header class="header">
+      <!-- Logo -->
+      <div class="logo-box">
+        <span class="logo-name">LANCERINO</span>
+      </div>
+
+      <!-- Name/Heading -->
+      <div class="heading-center">
+        <div class="heading">
+          <span class="heading-primary">Lance Liam De Padua</span>
+          <span class="heading-sub">Web Developer</span>
+          <span class="heading-about"
+            >Developing websites that give the needs and the satisfaction of the
+            customers using the latest web technologies.</span
+          >
+        </div>
+      </div>
+    </header>
+
+    <!-- Skills Section -->
+
+    <div class="skills-section">
+      <div class="skills-container">
+        <h1>Tools and Technologies</h1>
+        <div>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm">
+                <h5>Client Side</h5>
+                <ul class="skills-list">
+                  <li>JavaScript</li>
+                  <li>EcmaScript</li>
+                  <li>React JS</li>
+                  <li>Redux</li>
+                </ul>
+              </div>
+              <div class="col-sm">
+                <h5>Server Side</h5>
+                <ul>
+                  <li>Rest API</li>
+                  <li>Node JS</li>
+                  <li>Express JS</li>
+                </ul>
+              </div>
+
+              <div class="col-sm">
+                <h5>Database</h5>
+                <ul>
+                  <li>MongodDB</li>
+                </ul>
+              </div>
+              <div class="col-sm">
+                <h5>Testing</h5>
+                <ul>
+                  <li>Postman</li>
+                </ul>
+              </div>
+
+              <div class="col-sm">
+                <h5>Version Control</h5>
+                <ul>
+                  <li>Git</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="projects-section">
+      <div class="projects-container">
+        <h1>Projects</h1>
+        <div>
+          <div
+            id="carouselExampleControls"
+            class="carousel slide"
+            data-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="https://i.ibb.co/09ct9B0/1.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://i.ibb.co/Zd8DQ2B/4.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://i.ibb.co/7RKZtRy/3.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://i.ibb.co/Nj0M6Gv/2.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://i.ibb.co/2tFvbhK/5.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev"
+              href="#carouselExampleControls"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#carouselExampleControls"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+
+          <!-- Additional Information -->
+          <div class="information">
+            <h4>Rusi Motors Inquiry System</h4>
+            <p>
+              A web application where the customers of can access to the website
+              and inquire for the new and available products under Rusi Motors
+            </p>
+            <span><a href="https://sheltered-springs-92152.herokuapp.com/"> Go to app</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+
+    <div class="footer">
+      <div>
+        <ul>
+          <li>
+            <a
+              href="/https://www.linkedin.com/in/lance-liam-de-padua-401909143/"
+              class="links"
+              >LinkedIn</a
+            >
+          </li>
+          <li>
+            <a href="/https://github.com/lanceliamll" class="links">GitHub</a>
+          </li>
+          <li>
+            <a href="/" class="links">lancelliotqqq@gmail.com</a>
+          </li>
+        </ul>
+      <p class="logo-name">LANCERINO|2019</p>
+    </div>
+  </body>
+</html>
